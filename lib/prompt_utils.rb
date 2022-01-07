@@ -21,7 +21,6 @@ module PromptUtils
             resp = gets.chomp
             # a Regexp seems to work for straightforward numeric input 
             resp = resp.match(/^[\+\-\d\.]+$/) ? resp.to_f : nil
-            #puts resp
         end
         resp
     end
