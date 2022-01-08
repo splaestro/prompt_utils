@@ -7,7 +7,7 @@ module PromptUtils
     def choice(prompt, resplist=%w{Y N})
         resp = ""
         while !(resplist.include?(resp)) do
-            print "\n#{prompt} (#{resplist.join("/")})  "
+            print "\n#{prompt} (#{resplist.join("/")}) "
             resp = gets.chomp
         end
         resp
