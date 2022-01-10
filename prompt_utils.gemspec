@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["splaestro@gmail.com"]
 
   spec.summary       = "Simple methods to take restricted input from the console"
-  spec.homepage      = "https://github.com/splaestro/prompt-utils"
+  spec.homepage      = "https://github.com/splaestro/prompt_utils"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -19,8 +19,8 @@ Gem::Specification.new do |spec|
     spec.metadata["allowed_push_host"] = "http://localhost"
 
     spec.metadata["homepage_uri"] = spec.homepage
-    spec.metadata["source_code_uri"] = "https://github.com/splaestro/prompt-utils"
-    spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
+    spec.metadata["source_code_uri"] = "https://github.com/splaestro/prompt_utils"
+    spec.metadata["changelog_uri"] = "https://github.com/splaestro/prompt_utils/CHANGELOG.md"
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
       "public gem pushes."
