@@ -1,8 +1,6 @@
 # PromptUtils
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/prompt_utils`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+PromptUtils is a collection of straightforward methods to take restricted input from the console with a prompt, similar to bash's `read -e -p`.
 
 ## Installation
 
@@ -32,7 +30,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/prompt_utils.
+Bug reports and pull requests are welcome on GitHub at https://github.com/splaestro/prompt_utils.
 
 ## License
 
