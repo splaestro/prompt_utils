@@ -7,7 +7,7 @@ class PromptUtilsTest < Minitest::Test
 
     def setup
         $stdout.puts name
-        %w{A B C}.each do |ll|
+        %w{A B C N Y}.each do |ll|
             File.open("#{TMPDIR}/input_choice_#{ll}", "w") do |f|
                 f.write "#{ll}\n"
             end
@@ -50,7 +50,17 @@ class PromptUtilsTest < Minitest::Test
     end
 
     def test_choice_default
-        skip
+        assert_empty(ARGV, "Oh crap! ARGV has something in it! All bets are off!")
+
+        %w{N Y}.each do |rr|
+            ARGV[0] = "#{TMPDIR}/input_choice_#{rr}"
+            prompt = "\nPlease pick one (Y/N) "
+            assert_output(prompt) {
+                assert_equal(rr, resp = choice("Please pick one"))
+                assert_instance_of(String, resp)
+            }
+        end
+        ARGV.shift
     end
     
     def test_num_input
