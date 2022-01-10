@@ -1,5 +1,6 @@
 require "prompt_utils/version"
 
+# Simple methods to take restricted input from the console
 module PromptUtils
     class Error < StandardError; end
   
